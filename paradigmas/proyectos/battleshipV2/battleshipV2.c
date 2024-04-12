@@ -191,13 +191,14 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
     posicionarBarcos(tableroJugador);
     printing(tableroJugador);
 
-    printf("Que empiece la batalla Naval!\n");
+    printf("Que empiece la batalla Naval!\n\n "
+         "------------------------------------------------------");
 
     do
     {
         int barcosGolpeadosPC = 0, barcosGolpeadosJugador = 0;
-
-        printf("Turno del jugador: ");
+        
+        printf("/n /n Turno del jugador: ");
         atacarPC(tableroPC);
         printing(tableroPC);
 
@@ -220,7 +221,7 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
             printf("¡La computadora ha ganado!\n");
             break; // Terminar el juego si el jugador se queda sin vidas
         }
-        printf("\n \n");
+        printf("\n \n ------------------------------------------------------");
 
     } while (true);
 }
