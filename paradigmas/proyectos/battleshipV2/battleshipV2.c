@@ -207,7 +207,7 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
         if (barcosGolpeadosPC == 3)
         {
             printf("¡Felicitaciones, has ganado!\n");
-            break; // Terminar el juego si el jugador se queda sin vidas
+            break; // Terminar el juego si la computadora se queda sin vidas
         }
 
         printf("Turno de la computadora: ");
