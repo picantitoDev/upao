@@ -220,6 +220,7 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
             printf("¡La computadora ha ganado!\n");
             break; // Terminar el juego si el jugador se queda sin vidas
         }
+        printf("\n \n");
 
     } while (true);
 }
