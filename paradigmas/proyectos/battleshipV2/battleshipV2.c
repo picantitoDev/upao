@@ -201,6 +201,7 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
         
         printf("\n\n Turno del jugador: ");
         atacarPC(tableroPC);
+        printf("\n\n");
         printing(tableroPC);
 
         barcosGolpeadosPC = barcosHundidos(tableroPC);
@@ -213,6 +214,7 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
 
         printf("Turno de la computadora: ");
         atacarJugador(tableroJugador);
+        printf("\n\n");
         printing(tableroJugador);
 
         barcosGolpeadosJugador = barcosHundidos(tableroJugador);
