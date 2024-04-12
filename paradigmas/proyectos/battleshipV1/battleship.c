@@ -209,17 +209,20 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
     barcosAleatorios(tableroPC);
 
     // Positioning
+    printf("Preparate para la Batalla Naval!\n");
     posicionarBarcos(tableroJugador);
     printing(tableroJugador);
 
-    printf("Que empiece la batalla Naval!\n");
+    printf("Que empiece la batalla Naval!\n\n "
+         "------------------------------------------------------");
 
     do
     {
         int barcosGolpeadosPC = 0, barcosGolpeadosJugador = 0;
-
-        printf("Turno del jugador: ");
+        
+        printf("\n\n Turno del jugador: ");
         atacarPC(tableroPC);
+        printf("\n\n");
         printingPC(tableroPC);
 
         barcosGolpeadosPC = barcosHundidos(tableroPC);
@@ -227,11 +230,12 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
         if (barcosGolpeadosPC == 3)
         {
             printf("¡Felicitaciones, has ganado!\n");
-            break; // Terminar el juego si el jugador se queda sin vidas
+            break; // Terminar el juego si la computadora se queda sin vidas
         }
 
         printf("Turno de la computadora: ");
         atacarJugador(tableroJugador);
+        printf("\n\n");
         printing(tableroJugador);
 
         barcosGolpeadosJugador = barcosHundidos(tableroJugador);
@@ -241,6 +245,7 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
             printf("¡La computadora ha ganado!\n");
             break; // Terminar el juego si el jugador se queda sin vidas
         }
+        printf("\n \n ------------------------------------------------------");
 
     } while (true);
 }
