@@ -188,6 +188,7 @@ void simularJuego(int tableroPC[ROW][COL], int tableroJugador[ROW][COL])
     barcosAleatorios(tableroPC);
 
     // Positioning
+    printf("Preparate para la Batalla Naval!/n");
     posicionarBarcos(tableroJugador);
     printing(tableroJugador);
 
