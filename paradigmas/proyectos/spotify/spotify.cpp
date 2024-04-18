@@ -118,8 +118,8 @@ struct Playlist
 
 int main(void)
 {
-    const int maxSize = 10;                    // Tamaño máximo de la lista de reproducción
-    Playlist<std::string, maxSize> myPlaylist; // Crear una lista de reproducción de canciones
+    const int maxSize = 10;                    // Tamaño maximo de la playlist
+    Playlist<std::string, maxSize> myPlaylist; // Crear una playlist
 
     // Canciones
     myPlaylist.agregarCancion("Arctic Monkeys - Do I Wanna Know?");
